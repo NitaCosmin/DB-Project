@@ -48,12 +48,6 @@
             <artifactId>javax.mail</artifactId>
             <version>1.6.2</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/com.microsoft.azure/azure-spring-apps-maven-plugin -->
-        <dependency>
-            <groupId>com.microsoft.azure</groupId>
-            <artifactId>azure-spring-apps-maven-plugin</artifactId>
-            <version>1.15.0</version>
-        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-mail</artifactId>
@@ -144,36 +138,6 @@
                             <artifactId>lombok</artifactId>
                         </exclude>
                     </excludes>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>com.microsoft.azure</groupId>
-                <artifactId>azure-spring-apps-maven-plugin</artifactId>
-                <version>1.14.0</version>
-                <configuration>
-                    <subscriptionId>0c95baa5-79ba-4f16-943a-aca96bc77547</subscriptionId>
-                    <resourceGroup>TechChallenge
-                    </resourceGroup>
-                    <clusterName>xxx</clusterName>
-                    <appName>demo</appName>
-                    <isPublic>true</isPublic>
-                    <deployment>
-                        <cpu>1</cpu>
-                        <memoryInGB>1</memoryInGB>
-                        <instanceCount>1</instanceCount>
-                        <runtimeVersion>Java 17</runtimeVersion>
-                        <resources>
-                            <resource>
-                                <filtering/>
-                                <mergeId/>
-                                <targetPath/>
-                                <directory>${project.basedir}/target</directory>
-                                <includes>
-                                    <include>*.jar</include>
-                                </includes>
-                            </resource>
-                        </resources>
-                    </deployment>
                 </configuration>
             </plugin>
             <!--			<plugin>-->

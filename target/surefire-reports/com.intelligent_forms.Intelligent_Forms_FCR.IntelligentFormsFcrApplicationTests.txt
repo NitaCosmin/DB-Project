@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.intelligent_forms.Intelligent_Forms_FCR.IntelligentFormsFcrApplicationTests
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.379 s - in com.intelligent_forms.Intelligent_Forms_FCR.IntelligentFormsFcrApplicationTests
