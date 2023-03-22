@@ -20,6 +20,7 @@ public class FromPdfGenerate {
 
     private static final Font TITLE_FONT = new Font(Font.FontFamily.TIMES_ROMAN, 14, Font.BOLD);
     private static final Font TEXT_FONT = new Font(Font.FontFamily.TIMES_ROMAN, 12);
+    private static final String RESORCE_ROOT_DIR_PDF="/PDF/";
 
 
     public FileSystemResource generatePdf(User user, Form form) throws DocumentException, IOException {
@@ -41,6 +42,6 @@ public class FromPdfGenerate {
 
 
         document.close();
-        return new FileSystemResource("F:\\New folder\\Tech-Back-end\\form.pdf");
+        return new FileSystemResource(RESORCE_ROOT_DIR_PDF);
     }
 }
